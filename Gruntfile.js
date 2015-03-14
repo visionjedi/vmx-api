@@ -147,6 +147,7 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'jasmine', 'karma', 'concat', 'strip_code', 'uglify']);
+  grunt.registerTask('test', ['jshint', 'jasmine', 'karma']);
   grunt.registerTask('docs', ['groc:pub','groc:local']);
 
 };
